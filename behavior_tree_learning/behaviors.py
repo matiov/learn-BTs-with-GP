@@ -5,7 +5,6 @@ Implementing various py trees behaviors
 import os
 import sys
 
-sys.path.insert(1, '/home/matteo/Documents/py_trees')
 import py_trees as pt
 import state_machine as sm
 
