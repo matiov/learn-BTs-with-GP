@@ -1,0 +1,21 @@
+fallback_nodes:
+    - 'f('
+sequence_nodes:
+    - 's('
+condition_nodes:
+    - 'have_block?'
+    - 'cube0_placed?'
+    - 'task_done?'
+action_nodes:
+    - 'up'
+    - 'down'
+    - 'localise'
+    - 'move_pick0'
+    - 'move_pick_s'
+    - 'move_place'
+    - 'move_place_s'
+    - 'place'
+    - 'pick'
+    - 'tuck'
+up_node:
+    - ')'
