@@ -6,6 +6,19 @@ This repository contains an implementation of a Genetic Programming (GP) algorit
   <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/gazebo_world.png" width="700" height="450">
 </p>
 
+### Notes on installation
+
+After cloning the repository, run the following command to install the correct dpeendencies:
+```bash
+pip3 install -r requirements.txt
+```
+
+The Behavior Tree library is based on `py-trees==0.6.8` (see [documentation](https://py-trees.readthedocs.io/en/devel/) and [repository](https://github.com/splintered-reality/py_trees/tree/release/0.6.x)), which is the version used by `py-tree-ros` (see [repository](https://github.com/splintered-reality/py_trees_ros)) for the ROS distribution Melodic. 
+
+In particular, the following modifications have been made to the `py_trees` source code:
+* the function `pt.display.render_dot_tree` has been modified to take as input parameter the path of the target folder to save the figure;
+* the function `pt.display.render_dot_tree` has been modified to display ' ' (spaces) instead of * to distinguish nodes of the same type (e.g. for two Sequence nodes, the first one has name 'Sequence' and the second one has name 'Sequence ' instead of 'Sequence*').
+
 ## Content
 * `behavior_tree.py` is a class for handling string representations of behavior trees.
 * `behaviors.py` contains the implementation of all behaviors used in the simulations.
