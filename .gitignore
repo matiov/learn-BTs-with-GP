@@ -5,12 +5,10 @@ settings.json
 launch.json
 env
 logs
-logs_backup
 *.sqlite
 *.sln
 *.pyproj
 *.dot
-*.svg
 *.coverage
 *.pylintrc
 *.pyc
