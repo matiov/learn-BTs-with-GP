@@ -83,10 +83,10 @@ def plot_results():
     """ Plot the results of the simulation runs """
 
     # which plot?
-    failure_prob = False
-    noise = False
-    safety = False
-    scenarios = False
+    failure_prob = True
+    noise = True
+    safety = True
+    scenarios = True
 
     # Load paths base
     script_dir = os.path.dirname(__file__)
@@ -100,14 +100,17 @@ def plot_results():
     plotpars.plot_optimal = True
     plotpars.plot_std = False
     plotpars.optimum = -15.0
-    plotpars.save_fig = False
+    plotpars.legend_fsize = 16.0
+    plotpars.title_fsize = 18.0
+    plotpars.label_fsize = 16.0
 
     n_logs = 10
 
     # PLOT 1: impact of the failure probabilities on the learning
     if failure_prob:
-        plotpars.title = 'Comparative study on impact of the failure probabilities'
-        plotpars.path = os.path.join(parent_dir, 'runs_probability')
+        plotpars.save_fig = False
+        plotpars.title = 'Impact of the failure probabilities'
+        plotpars.path = os.path.join(parent_dir, 'plots/runs_probability.svg')
 
         logs = []
         for i in range(1, n_logs + 1):
@@ -136,7 +139,7 @@ def plot_results():
         plotpars.mean_color = 'c'
         plotpars.legend_name = 'Stochastic 3'
         logplot.plot_learning_curves(logs, plotpars)
-
+        
         logs = []
         for i in range(1, n_logs + 1):
             logs.append('scenario1_stoch4_' + str(i))
@@ -149,8 +152,9 @@ def plot_results():
 
     # PLOT 2: impact of the noise on the learning
     if noise:
+        plotpars.save_fig = False
         plotpars.title = 'Effects of adding non-essential behaviors'
-        plotpars.path = os.path.join(parent_dir, 'runs_noise.png')
+        plotpars.path = os.path.join(parent_dir, 'plots/runs_noise.svg')
 
         logs = []
         for i in range(1, n_logs + 1):
@@ -178,8 +182,9 @@ def plot_results():
 
     # PLOT 3: impact of the failure probability cost on the fitness function
     if safety:
-        plotpars.title = 'Impact of the failure probability cost on the fitness function'
-        plotpars.path = os.path.join(parent_dir, 'runs_safety')
+        plotpars.save_fig = False
+        plotpars.title = 'Impact of the failure cost on the fitness'
+        plotpars.path = os.path.join(parent_dir, 'plots/runs_safety.svg')
 
         logs = []
         for i in range(1, n_logs + 1):
@@ -200,8 +205,12 @@ def plot_results():
 
     # PLOT 4: comparative study on the difficulty of learning a task
     if scenarios:
+        plotpars.legend_fsize = 14.0
+        plotpars.title_fsize = 16.0
+        plotpars.label_fsize = 14.0
+        plotpars.save_fig = False
         plotpars.title = 'Learning of tasks with increasing difficulty'
-        plotpars.path = os.path.join(parent_dir, 'runs_scenarios_long.png')
+        plotpars.path = os.path.join(parent_dir, 'plots/runs_scenarios.svg')
 
         logs = []
         for i in range(1, n_logs + 1):
@@ -257,5 +266,5 @@ def plot_results():
 
 if __name__ == "__main__":
 
-    run_simulation()
+    #run_simulation()
     plot_results()

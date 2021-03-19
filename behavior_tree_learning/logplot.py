@@ -141,7 +141,7 @@ def plot_fitness(log_name, fitness, n_episodes=None):
         plt.plot(fitness)
         plt.xlabel("Generation")
     plt.ylabel("Fitness")
-    plt.savefig(get_log_folder(log_name) + '/Fitness.png')
+    plt.savefig(get_log_folder(log_name) + '/Fitness.svg')
     plt.close()
 
 @dataclass
@@ -149,16 +149,19 @@ class PlotParameters:
     """ Data class for parameters for plotting """
     plot_mean: bool = True          #Plot the mean of the logs
     mean_color: str = 'b'           #Color for mean curve
-    plot_std: bool = False           #Plot the standard deviation
+    plot_std: bool = False          #Plot the standard deviation
     std_color: str = 'b'            #Color of the std fill
     plot_ind: bool = False          #Plot each individual log
     ind_color: str = 'aquamarine'   #Ind color
     legend_name: str = ''           #Legend name
+    legend_fsize: float = 16.0      #Set font size of legend
     title: str = ''                 #Plot title
+    title_fsize: float = 18.0       #Set font size of title
     xlabel: str = ''                #Label of x axis
     x_max: int = 0                  #Upper limit of x axis
     ylabel: str = ''                #Label of y axis
-    extrapolate_y: bool = True     #Extrapolate y as constant to x_max
+    label_fsize: float = 16.0       ##Set font size of axis labels
+    extrapolate_y: bool = True      #Extrapolate y as constant to x_max
     plot_optimal: bool = True       #Plot optimal value as thin vertical line
     optimum: float = 0              #Optimal value to plot
     save_fig: bool = True           #Save figure. If false, more plots is possible.
@@ -204,16 +207,16 @@ def plot_learning_curves(logs, parameters):
     if parameters.plot_std:
         plt.fill_between(x, y_mean - y_std, y_mean + y_std, alpha=.1, color=parameters.std_color)
 
-    plt.legend(loc="lower right")
-    plt.xlabel(parameters.xlabel)
+    plt.legend(loc="lower right", prop={'size': parameters.legend_fsize})
+    plt.xlabel(parameters.xlabel, fontsize=parameters.label_fsize)
     if parameters.x_max > 0:
         plt.xlim(0, parameters.x_max)
-    plt.ylabel(parameters.ylabel)
-    plt.title(parameters.title)
+    plt.ylabel(parameters.ylabel, fontsize=parameters.label_fsize)
+    plt.title(parameters.title, fontsize=parameters.title_fsize, wrap=True)
     if parameters.save_fig:
         if parameters.plot_optimal:
             plt.plot([0, parameters.x_max], \
                      [parameters.optimum, parameters.optimum], \
                      color='k', linestyle='dashed', linewidth=1)
-        plt.savefig(parameters.path, format='png', dpi=300)
+        plt.savefig(parameters.path, format='svg', dpi=300)
         plt.close()
