@@ -78,23 +78,22 @@ from the repository root.
 The BT solving the task in the State Machine can be shown to solve the same task designed in a physical simulator, e.g. Gazebo.
 A video showing this transfer, can be found [here](https://drive.google.com/file/d/1bAp8Jz72r4retdaVcQ7oChQmyb4HeQ-d/view?usp=sharing).
 
-###### Behavior Trees solving the first scenario and the _risky/safe_ alternative
+###### Behavior Trees solving the first scenario
 <p align="center">
   <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario1.png" width="500" height="270">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_safe.png" width="500" height="270">
 </p>
 
 ###### Behavior Trees solving the second scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario2.png" width="700" height="300">
+  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario2.svg" width="700" height="300">
 </p>
 
 ###### Behavior Trees solving the third scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario3.png"" width="700" height="300">
+  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario3.svg"" width="700" height="300">
 </p>
 
 ###### Hand-coded Behavior Trees solving the third scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/scenario3_handcode.png" width="1000" height="270">
+  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/scenario3_handcode.svg" width="1000" height="270">
 </p>
