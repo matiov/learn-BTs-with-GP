@@ -80,7 +80,7 @@ A video showing this transfer, can be found [here](https://drive.google.com/file
 
 ###### Behavior Trees solving the first scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario1.png" width="500" height="270">
+  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario1.svg" width="500" height="270">
 </p>
 
 ###### Behavior Trees solving the second scenario
@@ -95,5 +95,5 @@ A video showing this transfer, can be found [here](https://drive.google.com/file
 
 ###### Hand-coded Behavior Trees solving the third scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/scenario3_handcode.svg" width="1000" height="270">
+  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario3_handcode.svg" width="1000" height="270">
 </p>
