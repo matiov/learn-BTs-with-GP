@@ -3,7 +3,7 @@
 This repository contains an implementation of a Genetic Programming (GP) algorithm that evolves Behavior Trees (BTs) to solve different mobile manipulation tasks. The tasks consist in picking (from 1 to 3) cubes from tables of the environment and placing them in a different _placing_ table (see figure below). The BTs are executed in a high level state machine to make the problem computationally tractable, but they can be exported and run in a physical simulator (the code for the simulation in Gazebo with the learned BT can be provided upon request).
 
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/gazebo_world.png" width="700" height="450">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/gazebo_world.png width="700" height="450">
 </p>
 
 ### Notes on installation
@@ -80,20 +80,20 @@ A video showing this transfer, can be found [here](https://drive.google.com/file
 
 ###### Behavior Trees solving the first scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario1.svg" width="500" height="270">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario1.svg" width="500" height="270">
 </p>
 
 ###### Behavior Trees solving the second scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario2.svg" width="700" height="300">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario2.svg" width="700" height="300">
 </p>
 
 ###### Behavior Trees solving the third scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario3.svg"" width="700" height="300">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3.svg" width="700" height="300">
 </p>
 
 ###### Hand-coded Behavior Trees solving the third scenario
 <p align="center">
-  <img src="https://github.com/jstyrud/behavior-tree-learning/blob/tiago_simulation/plots/BT_scenario3_handcode.svg" width="1000" height="270">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3_handocded.svg width="1000" height="270">
 </p>
