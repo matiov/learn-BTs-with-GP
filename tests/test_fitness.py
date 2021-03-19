@@ -13,6 +13,8 @@ parent_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 behavior_tree_learning_path = os.path.join(parent_dir, 'behavior_tree_learning')
 sys.path.insert(1, behavior_tree_learning_path)
 
+plot_path = os.path.join(parent_dir, 'plots/')
+
 from environment import Environment
 import behavior_tree as behavior_tree
 
@@ -95,8 +97,8 @@ def test_fitness():
     print(fitness_s1, completed)
 
 
-    # to print individuals uncomment the following:
+    # to print individuals move the following after the definition of the BT string and uncomment:
     """
-    path = behavior_tree_learning_path
-    environment.plot_individual(path, 'BT_safe', bt_seq1)
+    path = plot_path
+    environment.plot_individual(path, 'BT_', bt_seq1)
     """
