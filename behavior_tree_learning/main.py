@@ -205,6 +205,7 @@ def plot_results():
 
     # PLOT 4: comparative study on the difficulty of learning a task
     if scenarios:
+        plotpars.x_max = 4*400000
         plotpars.legend_fsize = 14.0
         plotpars.title_fsize = 16.0
         plotpars.label_fsize = 14.0
@@ -266,5 +267,5 @@ def plot_results():
 
 if __name__ == "__main__":
 
-    #run_simulation()
+    run_simulation()
     plot_results()
