@@ -95,5 +95,5 @@ A video showing this transfer, can be found [here](https://drive.google.com/file
 
 ###### Hand-coded Behavior Trees solving the third scenario
 <p align="center">
-  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3_handocded.svg width="1000" height="270">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3_handcoded.svg width="900" height="270">
 </p>
