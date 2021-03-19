@@ -80,17 +80,17 @@ A video showing this transfer, can be found [here](https://drive.google.com/file
 
 ###### Behavior Trees solving the first scenario
 <p align="center">
-  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario1.svg" width="500" height="270">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario1.svg width="500" height="270">
 </p>
 
 ###### Behavior Trees solving the second scenario
 <p align="center">
-  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario2.svg" width="700" height="300">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario2.svg width="700" height="300">
 </p>
 
 ###### Behavior Trees solving the third scenario
 <p align="center">
-  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3.svg" width="700" height="300">
+  <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3.svg width="700" height="300">
 </p>
 
 ###### Hand-coded Behavior Trees solving the third scenario
