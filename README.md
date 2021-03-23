@@ -97,3 +97,5 @@ A video showing this transfer, can be found [here](https://drive.google.com/file
 <p align="center">
   <img src=https://github.com/matiov/learn-BTs-with-GP/blob/master/plots/BT_scenario3_handcoded.svg width="900" height="270">
 </p>
+
+It is interesting to see how the GP algorithm finds a more compact solution than the hand coded one (which is just three copies of the BT solving task 1 with cube related modifications), since the size of the tree is a factor in the fitness function. Note however, that sometimes these solutions are less human readable, especially for non experts in the field of Bts. 
