@@ -76,7 +76,7 @@ from the repository root.
 
 ## Media
 The BT solving the task in the State Machine can be shown to solve the same task designed in a physical simulator, e.g. Gazebo.
-A video showing this transfer, can be found [here](https://drive.google.com/file/d/13Hyf4pMfJx3BadHIUEdJkyFBZyBQZU4i/view?usp=sharing).
+A video showing this transfer, can be found [here](https://www.youtube.com/watch?v=D_6YE3HhEnA).
 
 ###### Behavior Trees solving the first scenario
 <p align="center">
